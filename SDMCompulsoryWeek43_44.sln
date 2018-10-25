@@ -3,7 +3,17 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28010.2003
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClassLibrary1", "ClassLibrary1\ClassLibrary1.csproj", "{F2797E53-5486-4166-B554-36BE242264A9}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Core", "Core", "{3A6D8E24-DC35-4BED-8666-0BFC07356DB8}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infrastructure", "Infrastructure", "{C8D4D1C5-F063-48BF-827A-B4AED544EA64}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SDM.Compulsory.Core", "SDM.Compulsory.Core\SDM.Compulsory.Core.csproj", "{05F82795-E2FE-4FE2-8F5C-457F8E2BB726}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SDM.Compulsory.Core.Entity", "SDM.Compulsory.Core.Entity\SDM.Compulsory.Core.Entity.csproj", "{6CD8E203-0B5B-4BC8-B73D-560E408D4749}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SDM.Compulsory.Infrastructure.Data", "SDM.Compulsory.Infrastructure.Data\SDM.Compulsory.Infrastructure.Data.csproj", "{34C6C702-D3D3-4700-811F-9C9DC5322C3A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SDM.Compulsory.Test", "SDM.Compulsory.Test\SDM.Compulsory.Test.csproj", "{C95CD32F-62AE-4615-8982-2552526FCCFF}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,13 +21,30 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{F2797E53-5486-4166-B554-36BE242264A9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{F2797E53-5486-4166-B554-36BE242264A9}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{F2797E53-5486-4166-B554-36BE242264A9}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{F2797E53-5486-4166-B554-36BE242264A9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{05F82795-E2FE-4FE2-8F5C-457F8E2BB726}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{05F82795-E2FE-4FE2-8F5C-457F8E2BB726}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{05F82795-E2FE-4FE2-8F5C-457F8E2BB726}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{05F82795-E2FE-4FE2-8F5C-457F8E2BB726}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6CD8E203-0B5B-4BC8-B73D-560E408D4749}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6CD8E203-0B5B-4BC8-B73D-560E408D4749}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6CD8E203-0B5B-4BC8-B73D-560E408D4749}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6CD8E203-0B5B-4BC8-B73D-560E408D4749}.Release|Any CPU.Build.0 = Release|Any CPU
+		{34C6C702-D3D3-4700-811F-9C9DC5322C3A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{34C6C702-D3D3-4700-811F-9C9DC5322C3A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{34C6C702-D3D3-4700-811F-9C9DC5322C3A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{34C6C702-D3D3-4700-811F-9C9DC5322C3A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C95CD32F-62AE-4615-8982-2552526FCCFF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C95CD32F-62AE-4615-8982-2552526FCCFF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C95CD32F-62AE-4615-8982-2552526FCCFF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C95CD32F-62AE-4615-8982-2552526FCCFF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{05F82795-E2FE-4FE2-8F5C-457F8E2BB726} = {3A6D8E24-DC35-4BED-8666-0BFC07356DB8}
+		{6CD8E203-0B5B-4BC8-B73D-560E408D4749} = {3A6D8E24-DC35-4BED-8666-0BFC07356DB8}
+		{34C6C702-D3D3-4700-811F-9C9DC5322C3A} = {C8D4D1C5-F063-48BF-827A-B4AED544EA64}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {E57C6277-26E9-4996-80AD-C24EE8BF46C7}
