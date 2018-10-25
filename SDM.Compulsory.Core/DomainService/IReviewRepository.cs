@@ -4,7 +4,7 @@ using System.Text;
 
 namespace SDM.Compulsory.Core.DomainService
 {
-    interface IReviewRepository
+    public interface IReviewRepository
     {
     }
 }

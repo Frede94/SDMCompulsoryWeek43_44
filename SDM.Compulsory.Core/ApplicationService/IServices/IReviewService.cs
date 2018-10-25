@@ -4,7 +4,7 @@ using System.Text;
 
 namespace SDM.Compulsory.Core.ApplicationService.IServices
 {
-    interface IReviewService
+    public interface IReviewService
     {
     }
 }

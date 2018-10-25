@@ -4,7 +4,7 @@ using System.Text;
 
 namespace SDM.Compulsory.Core.ApplicationService.Services
 {
-    class ReviewService
+    public class ReviewService
     {
     }
 }
