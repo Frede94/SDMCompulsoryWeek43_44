@@ -4,7 +4,7 @@ using System.Text;
 
 namespace SDM.Compulsory.Core.Entity
 {
-    class Review
+    public class Review
     {
         //Reviewer:571, Movie:15731, Grade:2, Date:'2004-06-14
         public int ReviewerID { get; set; }

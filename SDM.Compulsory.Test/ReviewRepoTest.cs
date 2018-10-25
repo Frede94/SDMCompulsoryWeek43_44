@@ -1,10 +1,16 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using Xunit;
 
 namespace SDM.Compulsory.Test
 {
-    class ReviewRepoTest
+    public class ReviewRepoTest
     {
+        [Fact]
+        public void Test1()
+        {
+
+        }
     }
 }

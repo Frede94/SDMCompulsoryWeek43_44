@@ -4,7 +4,7 @@ using System.Text;
 
 namespace SDM.Compulsory.Infrastructure.Data
 {
-    class DBInitializer
+    public class DBInitializer
     {
     }
 }

@@ -4,7 +4,7 @@ using System.Text;
 
 namespace SDM.Compulsory.Core.Entity.Repositories
 {
-    class ReviewRepository
+    public class ReviewRepository
     {
     }
 }
