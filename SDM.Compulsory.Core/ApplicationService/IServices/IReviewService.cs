@@ -21,15 +21,15 @@ namespace SDM.Compulsory.Core.ApplicationService.IServices
         //11. On input N, what are the reviewers that have reviewed movie N? The list
         //should be sorted decreasing by rate first, and date secondly.
 
-        Review ReviewersNumberOfReviews(Review N); //N = Review  1
-        Review ReviewersAverageReviews(Review N); //N = Review  2
-        int NumberOfReviewPrMovie(Review N, Review G); // N = Review | G = Review.Grade  3
-        Review MoviesNumberOfReview(Review N); //N = Number Of reviews pr movie  4
-        Review AverageRatingPerMovie(Review N);//  5
-        Review NumberOfMoviewWithGrade(Review N, Review G); //  6
-        Review GetBestGradeMovieID(Review id);//  7
-        Review HighestNumberOfReviews(Review id);//  8
-        Review What(Review N);//  9
+        int ReviewersNumberOfReviews(Review id); //N = Review  1
+        int ReviewersAverageReviews(Review id); //N = Review  2
+        int NumberOfReviewPrMovie(Review id); // N = Review | G = Review.Grade  3
+        int MoviesNumberOfReview(Review id); //N = Number Of reviews pr movie  4
+        double AverageRatingPerMovie(Review id);//  5
+        int NumberOfMoviewWithGrade(Review id); //  6
+        List<Review> GetBestGradeMovieID(Review id);//  7
+        List<Review> HighestNumberOfReviews(Review id);//  8
+        List<Review> TopSomethingOfMovies();//  9
         List<Review> SortedMoviesReviewedByReviewer();//  10
         List<Review> SortedReviewersOfMovie();// 11
     }

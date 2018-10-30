@@ -6,5 +6,6 @@ namespace SDM.Compulsory.Infrastructure.Data
 {
     public class DBInitializer
     {
+
     }
 }
