@@ -4,4 +4,9 @@
     <TargetFramework>netcoreapp2.1</TargetFramework>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\SDM.Compulsory.Core.Entity\SDM.Compulsory.Core.Entity.csproj" />
+    <ProjectReference Include="..\SDM.Compulsory.Core\SDM.Compulsory.Core.csproj" />
+  </ItemGroup>
+
 </Project>
