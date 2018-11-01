@@ -12,19 +12,19 @@ namespace SDM.Compulsory.Core.Entity.Repositories
 {
     public class ReviewRepository : IReviewRepository
     {
-
+        public const string filename = "ratings.json";
         public List<Review> Reviews { get; private set; }
-        public ReviewRepository(TextReader r)
+        public ReviewRepository()
         {
-            Reviews = ReadAllMovies(r);
+            Reviews = ReadAllMovies();
         }
-        private List<Review> ReadAllMovies(TextReader textreader)
-        {
+        private List<Review> ReadAllMovies()
+        {        
             List<Review> reviews = new List<Review>();
             Console.Write("Converting JSON file to objects");
             Stopwatch sw = Stopwatch.StartNew();
-
-            using (JsonTextReader reader = new JsonTextReader(textreader))
+            using (StreamReader streamReader = new StreamReader(filename))                        
+            using (JsonTextReader reader = new JsonTextReader(streamReader))
             {
                 var serializer = new JsonSerializer();
                 try

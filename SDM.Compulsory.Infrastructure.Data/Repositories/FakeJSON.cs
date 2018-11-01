@@ -1,11 +1,12 @@
-﻿using SDM.Compulsory.Core.Entity;
+﻿using SDM.Compulsory.Core.DomainService;
+using SDM.Compulsory.Core.Entity;
 using System;
 using System.Collections.Generic;
 using System.Text;
 
 namespace SDM.Compulsory.Infrastructure.Data
 {
-    public class FakeJSON
+    public class FakeJSON : IReviewRepository
     {
         //{ Reviewer:571, Movie:1057933, Grade:3, Date:'2005-12-23'}, 
         //{ Reviewer:571, Movie:673306, Grade:3, Date:'2005-07-05'}, 
@@ -21,7 +22,7 @@ namespace SDM.Compulsory.Infrastructure.Data
 
         //public static int reviewerId;
         //public static int movieId;
-        public IEnumerable<Review> Reviews { get; }
+        public List<Review> Reviews { get; }
 
         public FakeJSON()
         {
