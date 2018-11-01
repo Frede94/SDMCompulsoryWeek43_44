@@ -22,7 +22,18 @@ namespace SDM.Compulsory.Test
         }
 
         [Fact]
-        public void ReviewersAverageReviews()
+        public void ReviewersAverageRatingTest()
+        {            
+            int reviewerID = 571;
+            double average = 3.25;
+            IReviewService service = new ReviewService(new FakeJSON());
+            double result = service.ReviewersAverageRatings(reviewerID, average);
+
+            Assert.Equal(average, result);
+        }
+
+        [Fact]
+        public void NumberOfReviewPrMovie()
         {
 
         }

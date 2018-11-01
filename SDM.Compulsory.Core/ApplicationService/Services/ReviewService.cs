@@ -47,9 +47,12 @@ namespace SDM.Compulsory.Core.ApplicationService.Services
             throw new NotImplementedException();
         }
         //2
-        public int ReviewersAverageReviews(Review id)
+        public double ReviewersAverageRatings(int reviewerID, double average)
         {
-            throw new NotImplementedException();
+            var list = repository.Reviews;
+            var ratingsList = list.Where(r => r.ReviewerID.Equals(reviewerID));           
+            var averageRatings = ratingsList.Average(r => r.Grade);
+            return averageRatings;
         }
         //1
         public List<Review> ReviewersNumberOfReviews(int reviewerID)

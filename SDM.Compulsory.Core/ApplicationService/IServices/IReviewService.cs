@@ -22,7 +22,7 @@ namespace SDM.Compulsory.Core.ApplicationService.IServices
         //should be sorted decreasing by rate first, and date secondly.
 
         List<Review> ReviewersNumberOfReviews(int reviewerID); //N = Review  1
-        int ReviewersAverageReviews(Review id); //N = Review  2
+        double ReviewersAverageRatings(int reviewerID, double average); //N = Review  2
         int NumberOfReviewPrMovie(Review id); // N = Review | G = Review.Grade  3
         int MoviesNumberOfReview(Review id); //N = Number Of reviews pr movie  4
         double AverageRatingPerMovie(Review id);//  5
