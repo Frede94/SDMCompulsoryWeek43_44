@@ -7,6 +7,6 @@ namespace SDM.Compulsory.Core.DomainService
 {
     public interface IReviewRepository
     {
-        List<Review> ReadAllMovies();
+        List<Review> Reviews { get; }
     }
 }

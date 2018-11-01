@@ -1,4 +1,5 @@
 ﻿using SDM.Compulsory.Core.ApplicationService.IServices;
+using SDM.Compulsory.Core.DomainService;
 using SDM.Compulsory.Core.Entity;
 using System;
 using System.Collections.Generic;
@@ -8,6 +9,13 @@ namespace SDM.Compulsory.Core.ApplicationService.Services
 {
     public class ReviewService : IReviewService
     {
+        IReviewRepository repository;
+
+        public ReviewService(IReviewRepository reRepo)
+        {
+            repository = reRepo;
+        }
+
         public double AverageRatingPerMovie(Review id)
         {
             throw new NotImplementedException();
