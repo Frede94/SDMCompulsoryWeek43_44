@@ -8,7 +8,7 @@ namespace SDM.Compulsory.Test
     public class ReviewRepoTest
     {
         [Fact]
-        public void Test1()
+        public void ReadAllReviewsFromFakeJSON()
         {
 
         }
