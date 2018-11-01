@@ -17,9 +17,12 @@ namespace SDM.Compulsory.Core.ApplicationService.Services
             repository = reRepo;
         }
         //5
-        public double AverageRatingPerMovie(Review id)
+        public double AverageRatingPerMovie(int movieID, double average)
         {
-            throw new NotImplementedException();
+            var list = repository.Reviews;
+            var ratingsList = list.Where(r => r.MovieID.Equals(movieID));
+            var averageRatings = ratingsList.Average(r => r.Grade);
+            return averageRatings;
         }
         //7
         public List<Review> GetBestGradeMovieID(Review id)
@@ -31,20 +34,29 @@ namespace SDM.Compulsory.Core.ApplicationService.Services
         {
             throw new NotImplementedException();
         }
-        //4
-        public int MoviesNumberOfReview(Review id)
+        //3
+        public int NumberOfXGradesMovie(int reviewerID, int grade)
         {
-            throw new NotImplementedException();
+            var list = repository.Reviews;
+            var reviewerList = list.Where(r => r.ReviewerID.Equals(reviewerID));
+            var count = reviewerList.Where(g => g.Grade.Equals(grade)).Count();
+            return count;
         }
         //6
-        public int NumberOfMoviewWithGrade(Review id)
+        public int NumberOfMoviewWithGrade(int movieID,int grades)
         {
-            throw new NotImplementedException();
+            var list = repository.Reviews;
+            var movieList = list.Where(m => m.MovieID.Equals(movieID));
+            var count = movieList.Where(g => g.Grade.Equals(grades)).Count();
+            return count;
         }
-        //3
-        public int NumberOfReviewPrMovie(Review id)
+        //4
+        public int MoviesNumberOfReviewers(int movieID, int numberOfReviews)
         {
-            throw new NotImplementedException();
+            var list = repository.Reviews;
+            var reviewsList = list.Where(r => r.MovieID.Equals(movieID));
+            var count = reviewsList.Count();
+            return count;
         }
         //2
         public double ReviewersAverageRatings(int reviewerID, double average)

@@ -20,6 +20,7 @@ namespace SDM.Compulsory.Test
                 new Review(571,260373,3,new DateTime(2005,07,06)),
                 new Review(571,2566738,4,new DateTime(2005,07,06)),
                 new Review(605,2052325,4,new DateTime(2003,11,18)),
+                new Review(607,2052325,3,new DateTime(2003,11,18)),
                 new Review(605,724071,4,new DateTime(2001,07,17)),
                 new Review(605,1190655,4,new DateTime(2005,07,07)),
                 new Review(607,1721475,3,new DateTime(2005,07,07)),
