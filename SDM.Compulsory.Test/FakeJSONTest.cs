@@ -11,7 +11,7 @@ namespace SDM.Compulsory.Test
     public class FakeJSONTest
     {
         [Fact]
-        public void ReadAllReviewsFromFakeJSON()
+        public void ReadAllReviewsFromFakeJSONTest()
         {
             List<Review> Expected = new List<Review>
             {
@@ -31,7 +31,6 @@ namespace SDM.Compulsory.Test
             List<Review> Actual = new FakeJSON().Reviews;
 
             Assert.Equal(Expected, Actual);
-        }
-
+        }        
     }
 }

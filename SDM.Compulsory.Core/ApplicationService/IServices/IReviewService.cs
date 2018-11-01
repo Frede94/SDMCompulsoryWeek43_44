@@ -21,7 +21,7 @@ namespace SDM.Compulsory.Core.ApplicationService.IServices
         //11. On input N, what are the reviewers that have reviewed movie N? The list
         //should be sorted decreasing by rate first, and date secondly.
 
-        int ReviewersNumberOfReviews(Review id); //N = Review  1
+        List<Review> ReviewersNumberOfReviews(int reviewerID); //N = Review  1
         int ReviewersAverageReviews(Review id); //N = Review  2
         int NumberOfReviewPrMovie(Review id); // N = Review | G = Review.Grade  3
         int MoviesNumberOfReview(Review id); //N = Number Of reviews pr movie  4

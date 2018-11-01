@@ -3,6 +3,7 @@ using SDM.Compulsory.Core.DomainService;
 using SDM.Compulsory.Core.Entity;
 using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Text;
 
 namespace SDM.Compulsory.Core.ApplicationService.Services
@@ -51,9 +52,12 @@ namespace SDM.Compulsory.Core.ApplicationService.Services
             throw new NotImplementedException();
         }
         //1
-        public int ReviewersNumberOfReviews(Review id)
+        public List<Review> ReviewersNumberOfReviews(int reviewerID)
         {
-            throw new NotImplementedException();
+            var list = repository.Reviews;
+            var reviewer = list.Where(r => r.ReviewerID.Equals(reviewerID));
+            reviewer.Count();
+            return reviewer.ToList();
         }
         //10
         public List<Review> SortedMoviesReviewedByReviewer()
